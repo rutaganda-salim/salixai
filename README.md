@@ -29,7 +29,7 @@ Ensure you have the following software installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/rutaganda-salim/repository.git
+   git clone https://github.com/rutaganda-salim/salixai.git
    ```
 2. Navigate to the project directory:
 3. Install the project dependencies:
