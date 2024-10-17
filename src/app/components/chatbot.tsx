@@ -5,7 +5,7 @@ import { useChat } from "ai/react";
 import { MoveUpRight, Plus, RabbitIcon } from "lucide-react";
 import StyledChatbotResponse from "./StyledChatbot";
 import SparklesText from "@/components/ui/sparkles-text";
-import { BorderBeam } from "@/components/ui/border-beam";
+
 
 export default function Chatbot() {
   const {
