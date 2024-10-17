@@ -20,7 +20,6 @@ export default function Chatbot() {
   const messagesEndRef = useRef(null);
   const [isTyping, setIsTyping] = useState(false);
 
-  const toggleSidebar = () => setSidebarOpen(!sidebarOpen);
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -63,10 +62,10 @@ export default function Chatbot() {
           {messages.length === 0 ? (
             <div className="flex-1 flex flex-col items-center justify-center p-4">
               <h1 className="text-4xl font-bold mb-4 text-center">
-                Salim's AI: Learn, Chat, and Explore My World
+                Salim &apos;s AI: Learn, Chat, and Explore My World
               </h1>
               <p className="text-xl text-[#A3A3A3] text-[15px] mb-4 text-center">
-                Ask me anything—I'm here to share my story!
+                Ask me anything—I&apos;m here to share my story!
               </p>
               <div className="w-full max-w-2xl bg-[#141414] border border-[#262626] rounded-lg mb-8 relative">
                 <form onSubmit={handleSubmit}>
