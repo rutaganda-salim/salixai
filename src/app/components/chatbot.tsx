@@ -16,7 +16,7 @@ export default function Chatbot() {
     setInput,
     setMessages,
   } = useChat();
-  const messagesEndRef = useRef(null);
+  const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const [isTyping, setIsTyping] = useState(false);
 
 
