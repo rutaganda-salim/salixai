@@ -4,7 +4,7 @@
 
 ## Description
 
-A simple personalised ai chatbot using gemini api which you can include in your portfolio website
+A simple personalized ai chatbot using gemini api which you can include in your portfolio website
 
 ## Table of Contents
 
