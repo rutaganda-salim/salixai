@@ -16,24 +16,23 @@ export default function Chatbot() {
     setInput,
     setMessages,
   } = useChat();
+
+  // Fix the type here
   const messagesEndRef = useRef<HTMLDivElement | null>(null);
   const [isTyping, setIsTyping] = useState(false);
-
 
   useEffect(() => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
 
-  const handleKeyDown = (e) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === "Enter" && !e.shiftKey) {
       e.preventDefault();
       setIsTyping(true);
-      handleSubmit(e).then(() => {
-        setIsTyping(false);
-      });
+      handleSubmit(e as unknown as React.FormEvent<HTMLFormElement>);
+      setIsTyping(false);
     }
   };
-
   const startNewChat = () => {
     setMessages([]);
     setInput("");
@@ -46,7 +45,10 @@ export default function Chatbot() {
         <div className="relative">
           <header className="p-4 flex justify-between items-center relative z-10">
             <div className="flex items-center">
-              <SparklesText text="Salix AI" className="text-2xl font-bold text-white italic" />
+              <SparklesText
+                text="Salix AI"
+                className="text-2xl font-bold text-white italic"
+              />
             </div>
             <button
               onClick={startNewChat}
@@ -56,7 +58,7 @@ export default function Chatbot() {
             </button>
           </header>
         </div>
-        
+
         <main className="flex-1 bg-[#0A0A0A] flex flex-col relative overflow-y-auto custom-scrollbar">
           {messages.length === 0 ? (
             <div className="flex-1 flex flex-col items-center justify-center p-4">
