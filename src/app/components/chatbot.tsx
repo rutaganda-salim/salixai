@@ -40,7 +40,6 @@ export default function Chatbot() {
 
   return (
     <div className="flex h-screen bg-[#0A0A0A] text-gray-100">
-      <BorderBeam className="absolute inset-0 z-0" />
       <div className="flex-1 bg-[#0A0A0A] flex flex-col overflow-hidden max-w-[900px] mx-auto px-4">
         <div className="relative">
           <header className="p-4 flex justify-between items-center relative z-10">
@@ -161,6 +160,7 @@ export default function Chatbot() {
                 placeholder="Curious about me? Start typing!"
                 className="flex-1 ml-6 mr-6 bg-transparent text-white placeholder-white placeholder-opacity-50 outline-none resize-none h-16 custom-scrollbar"
                 rows={2}
+                
               />
               {input && (
                 <button
