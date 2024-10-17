@@ -3,11 +3,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useChat } from "ai/react";
 import { MoveUpRight, Plus, RabbitIcon } from "lucide-react";
-import Link from "next/link";
 import StyledChatbotResponse from "./StyledChatbot";
 import SparklesText from "@/components/ui/sparkles-text";
-import { Spotlight } from "@/components/ui/spotlight";
-import { cn } from "@/lib/utils";
 import { BorderBeam } from "@/components/ui/border-beam";
 
 export default function Chatbot() {
@@ -37,11 +34,6 @@ export default function Chatbot() {
         setIsTyping(false);
       });
     }
-  };
-
-  const handleStopTyping = () => {
-    setIsTyping(false);
-    setInput("");
   };
 
   const startNewChat = () => {
