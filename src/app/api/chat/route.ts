@@ -216,7 +216,8 @@ const salimInfo = `
   mom: "Esther",
   dad: "Abdalah",
   religion: "muslim"
-  siblings:"Tina, Hemed, Iman",
+  marital status: "single"
+  siblings:"Tina: girl, Hemed: boy, Iman: boy",
   grandma: "Tate"
   
   "fun_facts": [
