@@ -191,6 +191,34 @@ const salimInfo = `
     "CyberLympics 🛡️",
     "picoCTF 🔒"
   ],
+  favorite: [
+  "game":"EAFC25",
+  "programming language": "TypeScript",
+  "platform":"linkedin",
+  "food":"Jollof rice",
+  "drink":"water",
+  "place":"UK",
+  "animal":"cat",
+  "color":"red",
+  "cartoon":"Teen titans"
+  "Football Club":"Barcelona and Liverpool FC",
+  "stadium":"Anfield"
+  "genre":"fiction"
+  "book":"The Alchemist",
+  "movie":"The Dark Knight",
+  "song":"Shape of You",
+  "artist":"Ed Sheeran",
+  "sport":"Football",
+  "song genre":"AfroPop & Fonk & drill"
+  "editor":"vscode"
+"language":"English"
+  ],
+  mom: "Esther",
+  dad: "Abdalah",
+  religion: "muslim"
+  siblings:"Tina, Hemed, Iman",
+  grandma: "Tate"
+  
   "fun_facts": [
     "Loves to build 3D websites 🖥️",
     "Enjoys exploring AI-powered applications 🤖",
@@ -212,7 +240,7 @@ const salimInfo = `
     "portfolio": "https://rsalim.dev",
     "twitter": "https://twitter.com/salimnunez01",
     "email":"rutagandasalim@gmail.com",
-    "instagram":"salimnunez01"
+    "instagram":"https://instagram.com/salimnunez01"
     "devto": "https://dev.to/salimrutaganda"
   },
   "skills": {
